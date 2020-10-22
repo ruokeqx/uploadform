@@ -31,12 +31,13 @@ def book():
         name = booker.name.data
         college = booker.college.data
         stu_num = booker.stu_num.data
+        qq = booker.qq.data
         phone = booker.phone.data
         detail = booker.detail.data
         # sql
 
         # sendmail
-        content = 'name:%s\ncollege:%s\nstu_num:%s\nphone:%s\ndetail:%s\n' %(name,college,stu_num,phone,detail)  # mail content
+        content = 'name:%s\ncollege:%s\nstu_num:%s\nQQ:%s\nphone:%s\ndetail:%s\n' %(name,college,stu_num,qq,phone,detail)  # mail content
         mail = sendmail.Mail(sender, receivers)
         mail.send(subject, content, sendfile, filepath, sender_name, receivers_name)
         # flash                                             
