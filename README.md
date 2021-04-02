@@ -22,17 +22,14 @@ python form.py runserver --host=0.0.0.0
 ### 目录介绍
 
 ```bash
-drwxr-xr-x 1 ruokeqx 197121    0 10月 21 23:19 ./
-drwxr-xr-x 1 ruokeqx 197121    0 10月 20 00:50 ../
-drwxr-xr-x 1 ruokeqx 197121    0 10月 21 23:16 .git/
-drwxr-xr-x 1 ruokeqx 197121    0 10月 18 13:44 .vscode/
--rw-r--r-- 1 ruokeqx 197121  629 10月 21 23:19 bookform.py
--rw-r--r-- 1 ruokeqx 197121  476 10月 21 23:11 config.py
--rw-r--r-- 1 ruokeqx 197121 1.4K 10月 20 01:03 form.py
--rw-r--r-- 1 ruokeqx 197121  142 10月 21 23:19 README.md
--rw-r--r-- 1 ruokeqx 197121   47 10月 20 01:00 requirements.txt
--rw-r--r-- 1 ruokeqx 197121 2.9K 10月 20 00:53 sendmail.py
-drwxr-xr-x 1 ruokeqx 197121    0 10月 19 23:17 templates/
+-rwxrwxrwx 1 root root 1.2K Apr  2 18:05 README.md
+-rwxrwxrwx 1 root root  718 Apr  2 18:09 bookform.py
+-rwxrwxrwx 1 root root  512 Apr  2 18:07 config.py
+-rwxrwxrwx 1 root root 1.5K Apr  2 18:08 form.py
+-rwxrwxrwx 1 root root   56 Apr  2 18:08 requirements.txt
+-rwxrwxrwx 1 root root  629 Apr  2 18:09 savedata.py
+-rwxrwxrwx 1 root root 2.9K Apr  2 18:05 sendmail.py
+drwxrwxrwx 1 root root 4.0K Apr  2 18:05 templates
 ```
 
 #### form.py
@@ -51,3 +48,6 @@ drwxr-xr-x 1 ruokeqx 197121    0 10月 19 23:17 templates/
 
 一些配置，包括邮箱配置，后续会有数据库配置
 
+#### savedata.py
+
+数据存入数据库

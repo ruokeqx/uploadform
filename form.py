@@ -5,6 +5,7 @@ import time, os
 import sendmail
 from config import *
 from bookform import *
+import savedata
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'csrfdog'
@@ -35,7 +36,7 @@ def book():
         phone = booker.phone.data
         detail = booker.detail.data
         # sql
-
+        savedata.savedata(name,college,stu_num,qq,phone,detail)
         # sendmail
         content = 'name:%s\ncollege:%s\nstu_num:%s\nQQ:%s\nphone:%s\ndetail:%s\n' %(name,college,stu_num,qq,phone,detail)  # mail content
         mail = sendmail.Mail(sender, receivers)

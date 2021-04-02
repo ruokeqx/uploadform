@@ -5,9 +5,9 @@ from wtforms.validators import DataRequired
 
 class BookForm(FlaskForm):
     name = StringField('姓名', validators=[DataRequired()])
-    college = StringField('学院', validators=[DataRequired()])
-    stu_num = StringField('学号', validators=[DataRequired()])
-    qq = StringField('qq', validators=[DataRequired()])
+    college = StringField('学院/部门', validators=[DataRequired()])
+    stu_num = StringField('学号/工号', validators=[DataRequired()])
+    qq = StringField('qq/微信', validators=[DataRequired()])
     phone = StringField('联系方式', validators=[DataRequired()])
     detail = StringField('简述问题', validators=[DataRequired()])
     submit = SubmitField("预约")

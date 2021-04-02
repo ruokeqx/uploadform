@@ -9,3 +9,7 @@ filepath = ''                       # 文件路径
 sender_name = "ZSTUCA"              # 发件人姓名
 receivers_name = [':)']             # 收件人姓名
 # sql
+host=''
+user=''
+password=''
+db=''
